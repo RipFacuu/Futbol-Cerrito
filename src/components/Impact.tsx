@@ -2,7 +2,7 @@ import { Heart, DollarSign, Users, GraduationCap } from 'lucide-react';
 
 export default function Impact() {
   return (
-    <section id="impact" className="py-20 bg-gradient-to-br from-green-50 to-white">
+    <section id="impact" className="py-20 bg-gradient-to-br from-blue-50 to-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold text-gray-900 mb-4">
@@ -22,8 +22,8 @@ export default function Impact() {
             <div className="space-y-6">
               <div className="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow">
                 <div className="flex items-start space-x-4">
-                  <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <DollarSign className="text-green-600" size={24} />
+                  <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                    <DollarSign className="text-blue-600" size={24} />
                   </div>
                   <div>
                     <h4 className="text-xl font-bold text-gray-900 mb-2">Donaciones</h4>
@@ -36,8 +36,8 @@ export default function Impact() {
 
               <div className="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow">
                 <div className="flex items-start space-x-4">
-                  <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <Users className="text-green-600" size={24} />
+                  <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                    <Users className="text-blue-600" size={24} />
                   </div>
                   <div>
                     <h4 className="text-xl font-bold text-gray-900 mb-2">Voluntariado</h4>
@@ -50,8 +50,8 @@ export default function Impact() {
 
               <div className="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow">
                 <div className="flex items-start space-x-4">
-                  <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <GraduationCap className="text-green-600" size={24} />
+                  <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                    <GraduationCap className="text-blue-600" size={24} />
                   </div>
                   <div>
                     <h4 className="text-xl font-bold text-gray-900 mb-2">Patrocinio</h4>
@@ -64,33 +64,33 @@ export default function Impact() {
             </div>
           </div>
 
-          <div className="bg-green-600 rounded-2xl p-10 text-white">
+          <div className="bg-blue-600 rounded-2xl p-10 text-white shadow-xl shadow-blue-900/20">
             <div className="text-center mb-8">
               <Heart size={48} className="mx-auto mb-4" />
               <h3 className="text-3xl font-bold mb-4">Hace la Diferencia</h3>
-              <p className="text-green-100 leading-relaxed">
+              <p className="text-blue-100 leading-relaxed">
                 Cada aporte, por pequeño que sea, tiene un impacto real en la vida de nuestros jóvenes atletas.
               </p>
             </div>
 
             <div className="space-y-4">
-              <div className="bg-green-700 rounded-lg p-6">
+              <div className="bg-blue-700 rounded-lg p-6">
                 <div className="text-3xl font-bold mb-2">$500</div>
-                <p className="text-green-100">Equipa a un jugador por una temporada completa</p>
+                <p className="text-blue-100">Equipa a un jugador por una temporada completa</p>
               </div>
 
-              <div className="bg-green-700 rounded-lg p-6">
+              <div className="bg-blue-700 rounded-lg p-6">
                 <div className="text-3xl font-bold mb-2">$1,500</div>
-                <p className="text-green-100">Beca mensual para un joven talento</p>
+                <p className="text-blue-100">Beca mensual para un joven talento</p>
               </div>
 
-              <div className="bg-green-700 rounded-lg p-6">
+              <div className="bg-blue-700 rounded-lg p-6">
                 <div className="text-3xl font-bold mb-2">$5,000</div>
-                <p className="text-green-100">Mantiene un programa de entrenamiento durante un año</p>
+                <p className="text-blue-100">Mantiene un programa de entrenamiento durante un año</p>
               </div>
             </div>
 
-            <button className="w-full mt-8 bg-white text-green-600 font-bold py-4 rounded-lg hover:bg-green-50 transition-colors">
+            <button className="w-full mt-8 bg-white text-blue-600 font-bold py-4 rounded-lg hover:bg-blue-50 transition-colors">
               Donar Ahora
             </button>
           </div>
@@ -102,19 +102,19 @@ export default function Impact() {
           </h3>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div className="text-center">
-              <div className="text-4xl font-bold text-green-600 mb-2">95%</div>
+              <div className="text-4xl font-bold text-blue-600 mb-2">95%</div>
               <p className="text-gray-600">De nuestros jóvenes continúan sus estudios</p>
             </div>
             <div className="text-center">
-              <div className="text-4xl font-bold text-green-600 mb-2">200+</div>
+              <div className="text-4xl font-bold text-blue-600 mb-2">200+</div>
               <p className="text-gray-600">Becas otorgadas anualmente</p>
             </div>
             <div className="text-center">
-              <div className="text-4xl font-bold text-green-600 mb-2">30+</div>
+              <div className="text-4xl font-bold text-blue-600 mb-2">30+</div>
               <p className="text-gray-600">Jugadores en equipos profesionales</p>
             </div>
             <div className="text-center">
-              <div className="text-4xl font-bold text-green-600 mb-2">1,000+</div>
+              <div className="text-4xl font-bold text-blue-600 mb-2">1,000+</div>
               <p className="text-gray-600">Familias beneficiadas</p>
             </div>
           </div>

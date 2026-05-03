@@ -21,7 +21,7 @@ export default function Hero() {
           <div className="space-y-8 text-center lg:text-left order-2 lg:order-1">
             <div className="inline-block animate-fade-in">
               <span className="px-4 py-2 bg-green-600/20 backdrop-blur-md text-green-400 border border-green-500/30 rounded-full text-sm font-semibold tracking-wide">
-                Fundación Cerrito Fútbol Club
+                Cerrito Fútbol Club
               </span>
             </div>
 
@@ -31,13 +31,13 @@ export default function Hero() {
             </h1>
 
             <p className="text-xl text-gray-300 leading-relaxed max-w-2xl mx-auto lg:mx-0">
-              Construyendo comunidad, desarrollando talento y formando campeones dentro y fuera del campo en Cerrito.
+             Propendemos al desarrollo integral de niños, niñas y adolescentes a través de Programas Educativos, Deportivos y Sociales, Construyendo comunidad y desarrollando talentos
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center lg:justify-start">
               <button
                 onClick={() => scrollToSection('impact')}
-                className="px-8 py-4 bg-green-600 text-white rounded-xl font-bold hover:bg-green-700 transition-all transform hover:scale-105 flex items-center justify-center space-x-2 shadow-xl shadow-green-900/40"
+                className="px-8 py-4 bg-blue-600 text-white rounded-xl font-bold hover:bg-blue-700 transition-all transform hover:scale-105 flex items-center justify-center space-x-2 shadow-xl shadow-blue-900/40"
               >
                 <span>Cómo Ayudar</span>
                 <ArrowRight size={20} />
@@ -56,7 +56,7 @@ export default function Hero() {
                   <Trophy className="text-green-500" size={24} />
                 </div>
                 <div>
-                  <div className="text-2xl font-bold text-white uppercase">500+</div>
+                  <div className="text-2xl font-bold text-white uppercase">1000+</div>
                   <div className="text-xs text-gray-400 uppercase tracking-widest font-semibold">Jóvenes</div>
                 </div>
               </div>

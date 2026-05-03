@@ -9,7 +9,7 @@ export default function About() {
             <div className="relative z-10 rounded-3xl overflow-hidden shadow-2xl transform hover:scale-[1.02] transition-transform duration-500 bg-white p-4">
               <img
                 src="/imagenes/2.png"
-                alt="Equipo de Fundación Cerrito FC"
+                alt="Equipo de Cerrito Futbol Club"
                 className="w-full h-full object-contain aspect-[4/5] lg:aspect-square"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent pointer-events-none"></div>
@@ -22,10 +22,10 @@ export default function About() {
           <div className="space-y-10">
             <div>
               <h2 className="text-4xl lg:text-5xl font-extrabold text-gray-900 mb-6 leading-tight">
-                Más que un club, somos una <span className="text-green-600">comunidad</span>
+                Más que un Escuela, somos una <span className="text-green-600">comunidad</span>
               </h2>
               <p className="text-lg text-gray-600 leading-relaxed">
-                La Fundación Cerrito Fútbol Club nació con el sueño de transformar la realidad de nuestros jóvenes a través del deporte, los valores y la educación.
+                La Fundación Cerrito nació con el sueño de transformar la realidad de nuestros jóvenes a través del deporte, los valores y la educación.
               </p>
             </div>
 
@@ -46,7 +46,7 @@ export default function About() {
                 </div>
                 <div>
                   <h3 className="text-xl font-bold text-gray-900 mb-2">Visión</h3>
-                  <p className="text-gray-600">Ser una institución referente en la formación de ciudadanos comprometidos y talentos deportivos en Uruguay.</p>
+                  <p className="text-gray-600">Ser una institución referente en la formación de talentos deportivos en Córdoba.</p>
                 </div>
               </div>
             </div>
@@ -57,7 +57,7 @@ export default function About() {
                 <span>Nuestra Historia</span>
               </div>
               <p className="mt-4 text-gray-600 leading-relaxed italic">
-                "Fundado en el corazón de nuestra ciudad, el Cerrito Fútbol Club tiene una rica historia de tradición y pasión que une a generaciones."
+                "Fundado en el corazón de nuestra ciudad, el Cerrito tiene una rica historia de tradición y pasión que une a generaciones."
               </p>
             </div>
           </div>
@@ -66,11 +66,11 @@ export default function About() {
         <div className="bg-green-600 rounded-3xl p-12 text-white shadow-2xl shadow-green-900/20">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
             <div>
-              <div className="text-4xl lg:text-5xl font-bold mb-2">500+</div>
+              <div className="text-4xl lg:text-5xl font-bold mb-2">1000+</div>
               <div className="text-green-100 text-sm uppercase tracking-wider">Jóvenes Formados</div>
             </div>
             <div>
-              <div className="text-4xl lg:text-5xl font-bold mb-2">15+</div>
+              <div className="text-4xl lg:text-5xl font-bold mb-2">11+</div>
               <div className="text-green-100 text-sm uppercase tracking-wider">Años de Trayectoria</div>
             </div>
             <div>

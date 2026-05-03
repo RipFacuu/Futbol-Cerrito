@@ -19,11 +19,21 @@ export default function Contact() {
     setSuccess(false);
 
     try {
+      // Guardar en Supabase opcionalmente (mantener registro)
       const { error: submitError } = await supabase
         .from('contact_submissions')
         .insert([formData]);
 
       if (submitError) throw submitError;
+
+      // Crear mensaje para WhatsApp
+      const whatsappNumber = '5493513795552';
+      const text = `Hola! Mi nombre es ${formData.name}. Mi email es ${formData.email}. Mi mensaje: ${formData.message}`;
+      const encodedText = encodeURIComponent(text);
+      const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodedText}`;
+
+      // Redirigir a WhatsApp
+      window.open(whatsappUrl, '_blank');
 
       setSuccess(true);
       setFormData({ name: '', email: '', message: '' });
@@ -31,7 +41,7 @@ export default function Contact() {
       setTimeout(() => setSuccess(false), 5000);
     } catch (err) {
       console.error('Error submitting form:', err);
-      setError('Hubo un error al enviar el mensaje. Por favor, intenta de nuevo.');
+      setError('Hubo un error al procesar tu mensaje. Por favor, intenta de nuevo.');
     } finally {
       setLoading(false);
     }
@@ -52,7 +62,7 @@ export default function Contact() {
             Contáctanos
           </h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            ¿Tenés preguntas? ¿Querés unirte a nosotros? Estamos aquí para ayudarte.
+            ¿Tenés preguntas? Estamos aquí para ayudarte.
           </p>
         </div>
 
@@ -69,7 +79,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <h4 className="font-semibold text-gray-900 mb-1">Dirección</h4>
-                  <p className="text-gray-600">Cerrito, Departamento de Cerro Largo, Uruguay</p>
+                  <p className="text-gray-600">Adolfo Scandroglio 8752</p>
                 </div>
               </div>
 
@@ -79,7 +89,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <h4 className="font-semibold text-gray-900 mb-1">Teléfono</h4>
-                  <p className="text-gray-600">+598 XXXX XXXX</p>
+                  <p className="text-gray-600">+54 9 351379-5552</p>
                 </div>
               </div>
 
@@ -89,7 +99,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <h4 className="font-semibold text-gray-900 mb-1">Email</h4>
-                  <p className="text-gray-600">contacto@cerritofc.org</p>
+                  <p className="text-gray-600">cristhianabranchi@gmail.com</p>
                 </div>
               </div>
             </div>
@@ -99,11 +109,11 @@ export default function Contact() {
               <div className="space-y-2">
                 <p className="flex justify-between">
                   <span>Lunes - Viernes:</span>
-                  <span className="font-semibold">9:00 - 18:00</span>
+                  <span className="font-semibold">8:00 - 14:00</span>
                 </p>
                 <p className="flex justify-between">
                   <span>Sábados:</span>
-                  <span className="font-semibold">10:00 - 14:00</span>
+                  <span className="font-semibold">Cerrado</span>
                 </p>
                 <p className="flex justify-between">
                   <span>Domingos:</span>

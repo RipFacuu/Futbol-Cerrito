@@ -7,14 +7,17 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           <div className="lg:col-span-2 space-y-6">
             <div className="flex items-center space-x-3">
-              <div className="w-12 h-12 bg-green-600 rounded-2xl flex items-center justify-center shadow-lg shadow-green-900/20">
-                <span className="text-white font-black text-2xl">C</span>
+              <div className="w-14 h-14 rounded-full overflow-hidden border-2 border-green-600 shadow-lg shadow-green-900/20">
+                <img 
+                  src="/imagenes/logo.jpeg" 
+                  alt="Logo Cerrito Futbol Club" 
+                  className="w-full h-full object-cover"
+                />
               </div>
-              <span className="font-black text-2xl tracking-tighter">Fundación Cerrito FC</span>
+              <span className="font-black text-2xl tracking-tighter">Cerrito Futbol Club</span>
             </div>
             <p className="text-gray-400 leading-relaxed text-lg max-w-md">
-              Transformando vidas a través del fútbol, construyendo comunidad y desarrollando campeones dentro y fuera del campo en Uruguay.
-            </p>
+Propendemos al desarrollo integral de niños, niñas y adolescentes a través de Programas Educativos, Deportivos y Sociales, Construyendo comunidad y desarrollando talentos            </p>
             <div className="flex space-x-4">
               <a 
                 href="https://www.facebook.com/FundacionCerrito?locale=es_LA" 
@@ -42,19 +45,19 @@ export default function Footer() {
                 <div className="w-10 h-10 bg-white/5 rounded-xl flex items-center justify-center flex-shrink-0 group-hover:bg-green-600/20 transition-colors">
                   <MapPin size={20} className="text-green-500" />
                 </div>
-                <span className="text-gray-400 group-hover:text-gray-300 transition-colors">Cerrito, Uruguay</span>
+                <span className="text-gray-400 group-hover:text-gray-300 transition-colors">Adolfo Scandroglio 8752</span>
               </div>
               <div className="flex items-center space-x-3 group">
                 <div className="w-10 h-10 bg-white/5 rounded-xl flex items-center justify-center flex-shrink-0 group-hover:bg-green-600/20 transition-colors">
                   <Phone size={20} className="text-green-500" />
                 </div>
-                <span className="text-gray-400 group-hover:text-gray-300 transition-colors">+598 XXXX XXXX</span>
+                <span className="text-gray-400 group-hover:text-gray-300 transition-colors">+54 9 351379-5552</span>
               </div>
               <div className="flex items-center space-x-3 group">
                 <div className="w-10 h-10 bg-white/5 rounded-xl flex items-center justify-center flex-shrink-0 group-hover:bg-green-600/20 transition-colors">
                   <Mail size={20} className="text-green-500" />
                 </div>
-                <span className="text-gray-400 group-hover:text-gray-300 transition-colors">contacto@cerritofc.org</span>
+                <span className="text-gray-400 group-hover:text-gray-300 transition-colors">cristhianabranchi@gmail.com</span>
               </div>
             </div>
           </div>

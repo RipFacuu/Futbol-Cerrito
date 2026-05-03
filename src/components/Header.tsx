@@ -16,11 +16,15 @@ export default function Header() {
     <header className="fixed top-0 w-full bg-white shadow-md z-50">
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
-          <div className="flex items-center space-x-2">
-            <div className="w-10 h-10 bg-gradient-to-br from-green-600 to-green-800 rounded-full flex items-center justify-center">
-              <span className="text-white font-bold text-xl">C</span>
+          <div className="flex items-center space-x-3">
+            <div className="w-12 h-12 rounded-full overflow-hidden border-2 border-green-600 shadow-sm">
+              <img 
+                src="/imagenes/logo.jpeg" 
+                alt="Logo Cerrito Futbol Club" 
+                className="w-full h-full object-cover"
+              />
             </div>
-            <span className="font-bold text-xl text-gray-900">Fundación Cerrito FC</span>
+            <span className="font-bold text-xl text-gray-900 tracking-tight">Cerrito Futbol Club</span>
           </div>
 
           <div className="hidden md:flex space-x-8">
